@@ -1,0 +1,108 @@
+.offer-container {
+    height: 100vh;
+    background-color: var(--light-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-content {
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-name {
+    padding: 0;
+    margin: 0;
+    color: var(--green);
+}
+
+.offer-title {
+    font-size: 5vh;
+}
+
+.offer-up-section {
+    flex: 1;
+}
+
+.offer-text-container {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 10vw;
+}
+
+.offer-down-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.offer-card {
+    background-color: white;
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 35vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.icon {
+    font-size: 4vh;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 3vh;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    color: var(--green);
+    background-color: transparent;
+    font-size: 2vh;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.7s;
+}
+
+#icons {
+    font-size: 3vh;
+}
+
+.see-more:hover {
+    transform: scale(1.1);
+}
+
+
+.button-text {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-right: 10px; 
+    margin-top: 2vh;
+}

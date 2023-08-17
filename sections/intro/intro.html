@@ -1,0 +1,47 @@
+<div class="intro-container">
+    <section class="intro-left-section">
+        <div class="intro-content">
+            <div class="intro-title">Nowoczesna aranżacja twojego ogrodu</div>
+            <div class="intro-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji.
+                Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
+            </div>
+            <div class="intro-buttons">
+                <button class="intro-left-button">Skontaktuj się z nami</button>
+                <button class="intro-right-button">Zobacz nasze realizacje <span class="material-icons">arrow_downward</span></button>
+            </div>
+        </div>
+    </section>
+    <section class="intro-right-section">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/intro-garden-1.jpg" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/intro-garden-2.jpg" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/intro-garden-3.jpg" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/intro-garden-4.jpg" class="d-block w-100" alt="Image 4">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Poprzedni</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Następny</span>
+        </button>
+    </section>
+</div>
+<script>
+    var imageCarousel = document.getElementById('imageCarousel');
+    var carousel = new bootstrap.Carousel(imageCarousel, {
+        interval: 5000,
+        pause: 'hover'
+    });
+</script>

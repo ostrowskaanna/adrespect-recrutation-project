@@ -1,0 +1,81 @@
+.company-container {
+    height: 100vh;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: row;
+}
+
+.company-left-section {
+    background-image: url('/assets/images/about-company-garden.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex: 0 0 auto; 
+    position: sticky;
+    top: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.company-right-section {
+    flex: 1;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-content {
+    height: 50%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.company-text-container {
+    flex: 2;
+    color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.company-page-button {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.company-name {
+    padding: 0;
+    margin: 0;
+}
+
+.company-title {
+    font-size: 5vh;
+}
+
+.company-see-more {
+    color: var(--light-pink);
+    background-color: transparent;
+    height: 5vh;
+    width: 14vw;
+    border-radius: 10vh;
+    border: 1px solid var(--light-pink);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: 100;
+    transition: background-color 0.7s, border-color 0.7s, color 0.7s;
+}
+
+.company-see-more:hover {
+    background-color: var(--light-pink);
+    border: transparent;
+    color: var(--green);
+}

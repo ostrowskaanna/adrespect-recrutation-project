@@ -1,0 +1,93 @@
+@import '/styles.css';
+
+.intro-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--pink);
+}
+
+.intro-left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.intro-right-section {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    flex: 0 0 auto; 
+    width: 50%;
+}
+
+.intro-content {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+img {
+    height: 100vh;
+}
+
+.intro-title {
+    font-size: 7vh;
+}
+
+.intro-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.intro-left-button {
+    color: white;
+    background-color: var(--green);
+    height: 5vh;
+    width: 12vw;
+    border-radius: 10vh;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: 100;
+    transition: background-color 0.7s, border-color 0.7s, color 0.7s;
+}
+
+.intro-left-button:hover {
+    background-color: transparent;
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.intro-right-button {
+    color: var(--green);
+    background-color: transparent;
+    height: 5vh;
+    width: 14vw;
+    border-radius: 10vh;
+    border: 1px solid var(--green);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: 100;
+    transition: background-color 0.7s, border-color 0.7s, color 0.7s;
+}
+
+.intro-right-button:hover {
+    background-color: var(--green);
+    border: transparent;
+    color: white;
+}
