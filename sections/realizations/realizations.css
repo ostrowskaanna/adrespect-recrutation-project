@@ -1,0 +1,26 @@
+.realizations-container {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pink);
+}
+
+.realizations-name {
+    font-size: 2vh;
+    color: var(--green);
+}
+
+.realizations-title {
+    font-size: 5vh;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.grid-item {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}

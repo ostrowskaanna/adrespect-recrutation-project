@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
+    width: 50%;
 }
 
 .intro-right-section {
@@ -39,6 +40,10 @@ img {
     font-size: 7vh;
 }
 
+.intro-text {
+    font-size: 2vh;
+}
+
 .intro-buttons {
     display: flex;
     flex-direction: row;
@@ -47,7 +52,7 @@ img {
     width: 100%;
 }
 
-.intro-left-button {
+#intro-left-button {
     color: white;
     background-color: var(--green);
     height: 5vh;
@@ -57,19 +62,18 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-weight: 100;
     transition: background-color 0.7s, border-color 0.7s, color 0.7s;
 }
 
-.intro-left-button:hover {
+#intro-left-button:hover {
     background-color: transparent;
     border: 1px solid var(--green);
     color: var(--green);
 }
 
-.intro-right-button {
+#intro-right-button {
     color: var(--green);
     background-color: transparent;
     height: 5vh;
@@ -80,13 +84,12 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-weight: 100;
     transition: background-color 0.7s, border-color 0.7s, color 0.7s;
 }
 
-.intro-right-button:hover {
+#intro-right-button:hover {
     background-color: var(--green);
     border: transparent;
     color: white;

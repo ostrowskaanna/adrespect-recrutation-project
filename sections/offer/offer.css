@@ -24,6 +24,7 @@
     padding: 0;
     margin: 0;
     color: var(--green);
+    font-size: 2vh;
 }
 
 .offer-title {
@@ -62,6 +63,10 @@
     justify-content: center;
 }
 
+.offer-text {
+    font-size: 2vh;
+}
+
 .content {
     height: 35vh;
     width: 15vw;
@@ -80,6 +85,10 @@
     font-size: 3vh;
 }
 
+.desc {
+    font-size: 2vh;
+}
+
 .see-more {
     display: flex;
     align-items: center;
@@ -91,7 +100,7 @@
     transition: transform 0.7s;
 }
 
-#icons {
+.material-icons {
     font-size: 3vh;
 }
 

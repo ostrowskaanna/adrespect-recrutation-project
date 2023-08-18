@@ -1,0 +1,55 @@
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+    animation: fadeInAndExpand 0.7s forwards;
+}
+
+@keyframes fadeInAndExpand {
+    0% {
+      opacity: 0;
+      max-height: 0;
+    }
+    100% {
+      opacity: 1;
+      max-height: 500px; 
+    }
+}
+
+#menuOffer {
+    display: flex;
+}
+
+
+#submenuOffer .dropdown-item:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+#submenuOffer .dropdown-item {
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.navbar {
+    height: 7vh;
+    padding: 0;
+}
+
+#brand {
+    font-size: 2.5vh;
+}
+
+.navbar-nav .nav-link {
+    font-size: 2vh;
+}
+
+#submenuOffer .dropdown-item {
+    font-size: 2vh;
+}
+
+#navbarMenu {
+    background-color: #F8F9FA;
+}
+
+.hamburger-button {
+    font-size: 2vh;
+    border: none;
+}

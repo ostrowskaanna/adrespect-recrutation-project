@@ -4,6 +4,11 @@
     --light-pink: #F5F0EC;
 }
 
+* {
+    font-family: Verdana, sans-serif;
+}
+
+
 .page {
     height: 100vh;
     margin: 0;
