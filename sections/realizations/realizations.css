@@ -1,8 +1,21 @@
 .realizations-container {
-    height: 150vh;
     display: flex;
     flex-direction: column;
     background-color: var(--pink);
+}
+
+.realizations-text-section {
+    margin: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.realizations-text-container {
+    margin-left: 10vw;
+}
+
+.realizations-gallery-section {
+    position: relative;
 }
 
 .realizations-name {
@@ -14,13 +27,84 @@
     font-size: 5vh;
 }
 
+.gallery-cover {
+    height: 150vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(220, 193, 171, 0.8));
+    transition: height 0.7s;
+}
+
 .gallery {
     display: grid;
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vw; 
+    max-height: 150vh;
+    overflow: hidden;
+    transition: max-height 0.7s;
 }
 
 .grid-item {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+    display: block; 
+    margin-bottom: 5vw;
+    overflow: hidden;
+}
+
+
+.grid-item img {
+    width: 100%;
+    height: auto; /* jak nie wymyślę co zrobić to tu dać 100% */
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#show-more-button, #hide-more-button {
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vh;
+    font-weight: 100;
+    transition: background-color 0.7s, border-color 0.7s, color 0.7s;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#hide-more-button {
+    display: none;
+    bottom: 1vw;
+}
+
+#show-more-button:hover, #hide-more-button:hover {
+    background-color: black;
+    color: var(--pink);
+    border: transparent;
 }

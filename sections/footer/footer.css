@@ -1,0 +1,34 @@
+.footer {
+    background-color: black;
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+#footer-button {
+    color: white;
+    background-color: var(--green);
+    height: 5vh;
+    width: 12vw;
+    border-radius: 10vh;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vh;
+    font-weight: 100;
+    transition: background-color 0.7s, border-color 0.7s, color 0.7s;
+}
+
+#footer-button:hover {
+    background-color: white;
+    color: var(--green);
+}
+
+.footer-company-name, .footer-designer-name {
+    font-size: 2.5vh;
+}

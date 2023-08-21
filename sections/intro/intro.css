@@ -1,5 +1,3 @@
-@import '/styles.css';
-
 .intro-container {
     height: 100vh;
     display: flex;
@@ -24,12 +22,11 @@
 }
 
 .intro-content {
-    height: 60%;
-    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    margin: 10vw;
 }
 
 img {
@@ -38,10 +35,12 @@ img {
 
 .intro-title {
     font-size: 7vh;
+    margin-bottom: 5vh;
 }
 
 .intro-text {
     font-size: 2vh;
+    margin-bottom: 7vh;
 }
 
 .intro-buttons {
@@ -93,4 +92,9 @@ img {
     background-color: var(--green);
     border: transparent;
     color: white;
+}
+
+img {
+    overflow: hidden;
+    object-fit: cover;
 }
