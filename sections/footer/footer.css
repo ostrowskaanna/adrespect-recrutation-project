@@ -32,3 +32,7 @@
 .footer-company-name, .footer-designer-name {
     font-size: 2.5vh;
 }
+
+.list-inline-item {
+    cursor: pointer;
+}
