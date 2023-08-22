@@ -49,15 +49,14 @@
 
 .grid-item {
     display: block; 
-    margin-bottom: 5vw;
     overflow: hidden;
 }
 
 
 .grid-item img {
     width: 100%;
-    height: auto; /* jak nie wymyślę co zrobić to tu dać 100% */
-    transition: transform 0.3s, box-shadow 0.3s; 
+    height: 100%;
+    transition: transform 0.3s; 
 }
 
 .grid-item:hover img {

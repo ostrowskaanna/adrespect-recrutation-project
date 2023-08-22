@@ -16,7 +16,6 @@ function hideMorePhotos() {
     const galleryCover = document.querySelector('.gallery-cover');
     galleryContainer.style.maxHeight = '150vh'; 
     galleryCover.style.height = '150vh';
-    console.log(galleryContainer.style.maxHeight);
     showMoreButton.style.display = 'flex';
     hideMoreButton.style.display = 'none';
 }
